@@ -1,0 +1,63 @@
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/mixin";
+
+
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.color-red {
+	color:$color-red;
+}
+
+/* TRANSITION LINE LINK SECTION CLIENT HOVER */
+.slider {
+	position: absolute;
+    margin:0;
+    height: 2px;
+    background-color: $color-white;
+    width: 0%;
+    background-position: 100%;
+    transition: width 1s ease;
+}
+
+.for-slider-transition:hover .slider-top,.for-slider-transition:hover .slider-bottom{
+	 width: 100%;
+}
+.for-slider-transition {
+	position:relative;
+    display:inline-block;
+}
+
+/* END TRANSITION LINE LINK SECTION CLIENT HOVER END */
+
+/*NAVBAR CUSTOM*/
+@import "sections/navBar";
+
+/*SECTION CLIENT CUSTOM*/
+@import "sections/sectionClient";
+
+/*SECTION INFO CUSTOM*/
+@import "sections/sectionInfo";
+
+/*SECTION NAVIGATION*/
+@import "sections/sectionNavigation";
+
+/*SECTION COLOR FONT*/
+@import "sections/sectionColorFont";
+
+/*SECTION RESPONSIVE*/
+@import "sections/sectionResponsive";
+
+/*SECTION IMAGES*/
+@import "sections/sectionImages";
+
+/*SECTION IMAGES*/
+@import "sections/sectionIngredients";
+
+/*FOOTER*/
+@import "sections/footer";
+

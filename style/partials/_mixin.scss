@@ -1,0 +1,13 @@
+@mixin rotate($rotation) {
+    -webkit-transform: rotate($rotation);
+    -moz-transform: rotate($rotation);
+    -o-transform: rotate($rotation);
+    transform: rotate($rotation);
+}
+
+@mixin mixin-browser-transition($data) {
+    -webkit-transition: $data;
+    -moz-transition: $data;
+    -o-transition: $data;
+    transition: $data;
+}

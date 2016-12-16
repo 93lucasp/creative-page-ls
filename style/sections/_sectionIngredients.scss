@@ -1,0 +1,72 @@
+.section-ingredients {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: $color-white;
+    color: $color-gray;
+    p {
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    .standard-box {
+        width: 50%;
+        height: 250px;
+        padding: 10px 20px;
+        float: right;
+    }
+    .box-passion {
+        @extend .standard-box;
+        margin-top: 100px;
+        &:hover {
+            color: $color-light-gray;
+        }
+        @media screen and (max-width: map-get($mq-breakpoints, l-tablet)) {
+            height: 380px;
+        }
+        @media screen and (max-width: map-get($mq-breakpoints, s-tablet)) {
+            height: 450px;
+        }
+        @media screen and (max-width: map-get($mq-breakpoints, mobile)) {
+            width: 100%;
+            height: 360px;
+            margin-top: 0px;
+        }
+    }
+    .box-hard-work {
+        @extend .standard-box;
+        margin-bottom: 100px;
+        &:hover {
+            color: $color-light-gray;
+        }
+        @media screen and (max-width: map-get($mq-breakpoints, l-tablet)) {
+            height: 380px;
+        }
+        @media screen and (max-width: map-get($mq-breakpoints, s-tablet)) {
+            height: 450px;
+        }
+        @media screen and (max-width: map-get($mq-breakpoints, mobile)) {
+            width: 100%;
+            height: 380px;
+            margin-bottom: 0;
+        }
+    }
+    .box-keep-going {
+        @extend .standard-box;
+        height: 500px;
+        margin: 100px 0;
+        &:hover {
+            color: $color-light-gray;
+        }
+        @media screen and (max-width: map-get($mq-breakpoints, l-tablet)) {
+            height: 760px;
+        }
+        @media screen and (max-width: map-get($mq-breakpoints, s-tablet)) {
+            height: 900px;
+        }
+        @media screen and (max-width: map-get($mq-breakpoints, mobile)) {
+            width: 100%;
+            height: 610px;
+            margin: 0;
+        }
+    }
+}

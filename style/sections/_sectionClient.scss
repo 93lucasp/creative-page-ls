@@ -1,0 +1,51 @@
+.section-client {
+    width: 100%;
+    height: 46em;
+    padding: 15px;
+    position: relative;
+    background: url('../images/casa-milan.jpg') no-repeat center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    .description-client {
+        width: 100%;
+        height: 16em;
+        padding: 0 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: red;
+        background: -webkit-linear-gradient(transparent, red);
+        background: -o-linear-gradient(transparent, red);
+        background: -moz-linear-gradient(transparent, red);
+        background: linear-gradient(transparent, red);
+        color: $color-white;
+        p {
+            line-height: 1.4em;
+            font-size: 1.2em;
+        }
+        a {
+            z-index: 99;
+        }
+
+        @media screen and (max-width: map-get($mq-breakpoints, mobile)) {
+            padding: 0 10px;
+            p {
+                line-height: 1.2em;
+                font-size: 1em;
+            }
+        }
+    }
+    .slider-top {
+        @extend .slider;
+        margin: -6px auto;
+    }
+    .slider-bottom {
+        @extend .slider;
+        margin: 3px auto;
+    }
+    @media screen and (max-width: map-get($mq-breakpoints, l-tablet)) {
+        height: 46em;
+    }
+}
+
